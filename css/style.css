@@ -1078,12 +1078,12 @@ p {
 
 /* ── Responsive ── */
 @media (max-width: 1024px) {
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
   .process-grid::before { display: none; }
   .engagement-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer__inner { grid-template-columns: 1fr 1fr; }
+  .footer__inner { grid-template-columns: 1fr 1fr 1fr; }
   .values-full { grid-template-columns: repeat(2, 1fr); }
 }
 
