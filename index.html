@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crown Construction Management | Bay Area & NorCal Construction Management</title>
-  <meta name="description" content="Crown Construction Management provides expert construction management, owner's representation, and project advisory services across the Bay Area and Northern California. Building Today, Creating Tomorrow.">
+  <title>Crown Construction Management | Bay Area & NorCal</title>
+  <meta name="description" content="Expert construction management and owner's representation for developers and investors in the Bay Area and Northern California. Building Today, Creating Tomorrow.">
   <meta name="keywords" content="construction management, owner's representation, Bay Area, Northern California, Sacramento, project management, parcel split, permitting">
   <link rel="canonical" href="https://crowncm.org/">
 
@@ -13,13 +13,13 @@
   <meta property="og:description" content="Expert construction management and owner's representation for the Bay Area & Northern California.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://crowncm.org/">
-  <meta property="og:image" content="https://crowncm.org/images/logo-full-color.png">
+  <meta property="og:image" content="https://crowncm.org/images/logo-transparent.png">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Crown Construction Management">
   <meta name="twitter:description" content="Expert construction management and owner's representation for the Bay Area & Northern California.">
-  <meta name="twitter:image" content="https://crowncm.org/images/logo-full-color.png">
+  <meta name="twitter:image" content="https://crowncm.org/images/logo-transparent.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,51 +36,61 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "GeneralContractor",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "Crown Construction Management",
     "description": "Expert construction management and owner's representation for developers, investors, and property owners across the Bay Area and Northern California.",
     "url": "https://crowncm.org/",
-    "logo": "https://crowncm.org/images/logo-full-color.png",
-    "image": "https://crowncm.org/images/logo-full-color.png",
+    "logo": "https://crowncm.org/images/logo-transparent.png",
+    "image": "https://crowncm.org/images/logo-transparent.png",
     "telephone": "+1-530-218-1545",
     "email": "Jaskarn@crowncm.org",
     "slogan": "Building Today, Creating Tomorrow",
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "San Francisco Bay Area" },
-      { "@type": "AdministrativeArea", "name": "Greater Sacramento" },
-      { "@type": "AdministrativeArea", "name": "Northern California" }
-    ],
-    "knowsAbout": [
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "serviceType": [
       "Construction Management",
       "Owner's Representation",
       "Pre-Construction Planning",
       "Parcel Split Management",
       "Permitting and Entitlements",
-      "Cost and Budget Management"
+      "Cost and Budget Management",
+      "Schedule Management",
+      "Contractor Coordination"
+    ],
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "San Francisco Bay Area" },
+      { "@type": "AdministrativeArea", "name": "Greater Sacramento" },
+      { "@type": "AdministrativeArea", "name": "Northern California" }
     ]
   }
   </script>
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- ════════ NAVIGATION ════════ -->
-  <nav class="nav nav--transparent">
+  <nav class="nav nav--transparent" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
         <img src="images/logo-transparent.png" alt="Crown Construction Management">
       </a>
       <div class="nav__links">
-        <a href="index.html" class="nav__link nav__link--active">Home</a>
+        <a href="index.html" class="nav__link">Home</a>
         <a href="about.html" class="nav__link">About</a>
         <a href="services.html" class="nav__link">Services</a>
         <a href="contact.html" class="nav__link">Contact</a>
         <a href="contact.html" class="nav__cta">Free Consultation</a>
       </div>
-      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
+
+  <main id="main">
 
   <!-- ════════ HERO ════════ -->
   <section class="hero hero--home">
@@ -116,20 +126,20 @@
           <p class="reveal reveal-delay-2">Crown Construction Management partners with owners, developers, and investors across the Bay Area and Northern California. We deliver expert construction oversight and advocacy that protects your investment from day one through final closeout.</p>
           <div class="about-preview__values">
             <div class="value-card reveal reveal-delay-1">
-              <h4>Transparency</h4>
+              <h3>Transparency</h3>
               <p>Every decision, every dollar — fully visible.</p>
             </div>
             <div class="value-card reveal reveal-delay-2">
-              <h4>Accountability</h4>
+              <h3>Accountability</h3>
               <p>We own outcomes, not excuses.</p>
             </div>
             <div class="value-card reveal reveal-delay-3">
-              <h4>Advocacy</h4>
+              <h3>Advocacy</h3>
               <p>Your interests first, always.</p>
             </div>
             <div class="value-card reveal reveal-delay-4">
-              <h4>Expertise</h4>
-              <p>Senior professionals, not junior staff.</p>
+              <h3>Expertise</h3>
+              <p>Experienced professionals on every engagement.</p>
             </div>
           </div>
         </div>
@@ -153,32 +163,32 @@
       </div>
       <div class="services-grid">
         <div class="service-card service-card--featured reveal reveal-delay-1">
-          <div class="service-card__number">01</div>
+          <div class="service-card__number" aria-hidden="true">01</div>
           <h3>Construction Management</h3>
           <p>Comprehensive oversight from planning through completion, ensuring quality, cost, and timeline goals are met.</p>
         </div>
         <div class="service-card service-card--featured reveal reveal-delay-2">
-          <div class="service-card__number">02</div>
+          <div class="service-card__number" aria-hidden="true">02</div>
           <h3>Owner's Representation</h3>
           <p>Acting on your behalf to protect your interests — managing contractors, budgets, and critical decisions.</p>
         </div>
         <div class="service-card service-card--featured reveal reveal-delay-3">
-          <div class="service-card__number">03</div>
+          <div class="service-card__number" aria-hidden="true">03</div>
           <h3>Pre-Construction Planning</h3>
           <p>Feasibility studies, budgeting, and strategy before construction. We eliminate costly surprises early.</p>
         </div>
         <div class="service-card reveal reveal-delay-1">
-          <div class="service-card__number">04</div>
+          <div class="service-card__number" aria-hidden="true">04</div>
           <h3>Parcel Split Management</h3>
           <p>Coordinating subdivision and entitlement processes to maximize land value and development potential.</p>
         </div>
         <div class="service-card reveal reveal-delay-2">
-          <div class="service-card__number">05</div>
+          <div class="service-card__number" aria-hidden="true">05</div>
           <h3>Permitting & Entitlements</h3>
           <p>Navigating city and county approvals and regulatory compliance on your behalf.</p>
         </div>
         <div class="service-card reveal reveal-delay-3">
-          <div class="service-card__number">06</div>
+          <div class="service-card__number" aria-hidden="true">06</div>
           <h3>Cost & Budget Management</h3>
           <p>Tracking expenditures, reviewing change orders, and maintaining financial accountability.</p>
         </div>
@@ -200,22 +210,22 @@
       </div>
       <div class="process-grid">
         <div class="process-step reveal reveal-delay-1">
-          <div class="process-step__number">01</div>
+          <div class="process-step__number" aria-hidden="true">01</div>
           <h3>Discovery</h3>
           <p>We learn about your project, goals, timeline, and challenges to understand your needs.</p>
         </div>
         <div class="process-step reveal reveal-delay-2">
-          <div class="process-step__number">02</div>
+          <div class="process-step__number" aria-hidden="true">02</div>
           <h3>Proposal</h3>
           <p>A clear scope and engagement plan tailored to your project — no surprises, no hidden fees.</p>
         </div>
         <div class="process-step reveal reveal-delay-3">
-          <div class="process-step__number">03</div>
+          <div class="process-step__number" aria-hidden="true">03</div>
           <h3>Execution</h3>
           <p>Hands-on management from pre-construction through build, with regular reporting and oversight.</p>
         </div>
         <div class="process-step reveal reveal-delay-4">
-          <div class="process-step__number">04</div>
+          <div class="process-step__number" aria-hidden="true">04</div>
           <h3>Closeout</h3>
           <p>Final inspections, punch lists, and a clean handoff — your project delivered on time and on budget.</p>
         </div>
@@ -277,6 +287,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ════════ FOOTER ════════ -->
   <footer class="footer">
     <div class="container">
@@ -300,7 +312,7 @@
           <ul class="footer__links">
             <li><a href="tel:+15302181545">530-218-1545</a></li>
             <li><a href="mailto:Jaskarn@crowncm.org">Jaskarn@crowncm.org</a></li>
-            <li>Bay Area & Northern California</li>
+            <li>Bay Area &amp; Northern California</li>
           </ul>
         </div>
       </div>

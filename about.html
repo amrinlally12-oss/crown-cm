@@ -10,9 +10,11 @@
   <meta property="og:description" content="A trusted construction management and owner's representation partner for the Bay Area and Northern California.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://crowncm.org/about.html">
-  <meta property="og:image" content="https://crowncm.org/images/logo-full-color.png">
+  <meta property="og:image" content="https://crowncm.org/images/logo-transparent.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://crowncm.org/images/logo-full-color.png">
+  <meta name="twitter:title" content="About | Crown Construction Management">
+  <meta name="twitter:description" content="A trusted construction management and owner's representation partner for the Bay Area and Northern California.">
+  <meta name="twitter:image" content="https://crowncm.org/images/logo-transparent.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -20,9 +22,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- ════════ NAVIGATION ════════ -->
-  <nav class="nav nav--transparent">
+  <nav class="nav nav--transparent" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
         <img src="images/logo-transparent.png" alt="Crown Construction Management">
@@ -34,11 +37,13 @@
         <a href="contact.html" class="nav__link">Contact</a>
         <a href="contact.html" class="nav__cta">Free Consultation</a>
       </div>
-      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
+
+  <main id="main">
 
   <!-- ════════ HERO ════════ -->
   <section class="hero hero--sub">
@@ -73,20 +78,23 @@
           </div>
         </div>
 
-        <div class="about-full__sidebar reveal">
+        <aside class="about-full__sidebar reveal">
           <h3>Where We Work</h3>
           <ul class="area-list">
             <li>San Francisco Bay Area</li>
             <li>Greater Sacramento</li>
-            <li>Yolo & Placer Counties</li>
-            <li>Yuba & Sutter Counties</li>
+            <li>Yolo &amp; Placer Counties</li>
+            <li>Yuba &amp; Sutter Counties</li>
             <li>Northern California</li>
-            <li>Residential Projects</li>
-            <li>Commercial Projects</li>
-            <li>New Construction</li>
-            <li>Renovations & Remodels</li>
           </ul>
-        </div>
+          <h3 style="color:var(--white); margin-top:28px; margin-bottom:16px; font-size:1rem;">Project Types</h3>
+          <ul class="area-list">
+            <li>Residential &amp; Commercial</li>
+            <li>New Construction</li>
+            <li>Renovations &amp; Remodels</li>
+            <li>ADUs &amp; Parcel Splits</li>
+          </ul>
+        </aside>
       </div>
     </div>
   </section>
@@ -103,22 +111,22 @@
       <div class="values-full">
         <div class="value-full-card reveal reveal-delay-1">
           <div class="value-full-card__icon" aria-hidden="true">◈</div>
-          <h4>Transparency</h4>
+          <h3>Transparency</h3>
           <p>Every decision, every dollar, every timeline — fully visible to you at all times. No hidden agendas, no surprises.</p>
         </div>
         <div class="value-full-card reveal reveal-delay-2">
           <div class="value-full-card__icon" aria-hidden="true">◉</div>
-          <h4>Accountability</h4>
+          <h3>Accountability</h3>
           <p>We own outcomes, not excuses. When we commit to a scope, a budget, or a timeline, we deliver — and we answer for the results.</p>
         </div>
         <div class="value-full-card reveal reveal-delay-3">
           <div class="value-full-card__icon" aria-hidden="true">→</div>
-          <h4>Advocacy</h4>
+          <h3>Advocacy</h3>
           <p>Your interests come first in every conversation, every negotiation, and every decision. We represent you — not the contractor.</p>
         </div>
         <div class="value-full-card reveal reveal-delay-4">
           <div class="value-full-card__icon" aria-hidden="true">★</div>
-          <h4>Expertise</h4>
+          <h3>Expertise</h3>
           <p>Senior-level professionals on every engagement. You get experienced eyes and informed judgment — not junior staff learning on your dime.</p>
         </div>
       </div>
@@ -136,22 +144,22 @@
       </div>
       <div class="process-grid">
         <div class="process-step reveal reveal-delay-1">
-          <div class="process-step__number">01</div>
+          <div class="process-step__number" aria-hidden="true">01</div>
           <h3>Discovery</h3>
           <p>We learn about your project, goals, timeline, and challenges.</p>
         </div>
         <div class="process-step reveal reveal-delay-2">
-          <div class="process-step__number">02</div>
+          <div class="process-step__number" aria-hidden="true">02</div>
           <h3>Proposal</h3>
           <p>A clear scope and engagement plan tailored to your needs.</p>
         </div>
         <div class="process-step reveal reveal-delay-3">
-          <div class="process-step__number">03</div>
+          <div class="process-step__number" aria-hidden="true">03</div>
           <h3>Execution</h3>
           <p>Hands-on management with regular reporting and oversight.</p>
         </div>
         <div class="process-step reveal reveal-delay-4">
-          <div class="process-step__number">04</div>
+          <div class="process-step__number" aria-hidden="true">04</div>
           <h3>Closeout</h3>
           <p>Final inspections, punch lists, and a clean handoff.</p>
         </div>
@@ -169,6 +177,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ════════ FOOTER ════════ -->
   <footer class="footer">
@@ -193,7 +203,7 @@
           <ul class="footer__links">
             <li><a href="tel:+15302181545">530-218-1545</a></li>
             <li><a href="mailto:Jaskarn@crowncm.org">Jaskarn@crowncm.org</a></li>
-            <li>Bay Area & Northern California</li>
+            <li>Bay Area &amp; Northern California</li>
           </ul>
         </div>
       </div>

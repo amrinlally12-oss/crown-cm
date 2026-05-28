@@ -10,9 +10,11 @@
   <meta property="og:description" content="Schedule a free consultation. Expert construction management and owner's representation for the Bay Area and Northern California.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://crowncm.org/contact.html">
-  <meta property="og:image" content="https://crowncm.org/images/logo-full-color.png">
+  <meta property="og:image" content="https://crowncm.org/images/logo-transparent.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://crowncm.org/images/logo-full-color.png">
+  <meta name="twitter:title" content="Contact | Crown Construction Management">
+  <meta name="twitter:description" content="Schedule a free consultation. Expert construction management and owner's representation for the Bay Area and Northern California.">
+  <meta name="twitter:image" content="https://crowncm.org/images/logo-transparent.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -20,9 +22,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- ════════ NAVIGATION ════════ -->
-  <nav class="nav nav--transparent">
+  <nav class="nav nav--transparent" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">
         <img src="images/logo-transparent.png" alt="Crown Construction Management">
@@ -34,11 +37,13 @@
         <a href="contact.html" class="nav__link">Contact</a>
         <a href="contact.html" class="nav__cta">Free Consultation</a>
       </div>
-      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
+
+  <main id="main">
 
   <!-- ════════ HERO ════════ -->
   <section class="hero hero--sub">
@@ -69,19 +74,19 @@
 
           <div style="margin-top:40px;">
             <div class="contact-info__item reveal reveal-delay-1">
-              <h4>Phone</h4>
+              <h3>Phone</h3>
               <p><a href="tel:+15302181545">530-218-1545</a></p>
             </div>
             <div class="contact-info__item reveal reveal-delay-2">
-              <h4>Email</h4>
+              <h3>Email</h3>
               <p><a href="mailto:Jaskarn@crowncm.org">Jaskarn@crowncm.org</a></p>
             </div>
             <div class="contact-info__item reveal reveal-delay-3">
-              <h4>Service Area</h4>
+              <h3>Service Area</h3>
               <p class="desc">Bay Area, Greater Sacramento, and Northern California. We serve residential and commercial projects across the region.</p>
             </div>
             <div class="contact-info__item reveal reveal-delay-4">
-              <h4>Response Time</h4>
+              <h3>Response Time</h3>
               <p class="desc">We typically respond within one business day. For urgent project matters, call us directly.</p>
             </div>
           </div>
@@ -99,17 +104,17 @@
             <div class="form__row">
               <div class="form__group">
                 <label class="form__label" for="name">Full Name *</label>
-                <input type="text" id="name" name="name" class="form__input" required placeholder="Your name">
+                <input type="text" id="name" name="name" class="form__input" required placeholder="Your name" autocomplete="name">
               </div>
               <div class="form__group">
                 <label class="form__label" for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" class="form__input" placeholder="(555) 123-4567">
+                <input type="tel" id="phone" name="phone" class="form__input" placeholder="(555) 123-4567" autocomplete="tel">
               </div>
             </div>
 
             <div class="form__group">
               <label class="form__label" for="email">Email Address *</label>
-              <input type="email" id="email" name="email" class="form__input" required placeholder="you@email.com">
+              <input type="email" id="email" name="email" class="form__input" required placeholder="you@email.com" autocomplete="email">
             </div>
 
             <div class="form__group">
@@ -118,7 +123,7 @@
                 <option value="">Select a project type...</option>
                 <option value="new-construction">New Construction</option>
                 <option value="renovation">Renovation / Remodel</option>
-                <option value="parcel-split">Parcel Split / Entitlement</option>
+                <option value="parcel-split">Parcel Split / Entitlement Management</option>
                 <option value="adu">ADU (Accessory Dwelling Unit)</option>
                 <option value="commercial">Commercial Project</option>
                 <option value="owners-rep">Owner's Representation</option>
@@ -140,13 +145,16 @@
             <!-- Honeypot for spam -->
             <input type="text" name="_gotcha" style="display:none">
 
-            <button type="submit" class="btn btn--gold btn--large form__submit">Send Message</button>
+            <button type="submit" class="btn btn--gold btn--large form__submit">Request My Free Consultation</button>
+            <div id="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
           </form>
         </div>
 
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ════════ FOOTER ════════ -->
   <footer class="footer">
@@ -171,7 +179,7 @@
           <ul class="footer__links">
             <li><a href="tel:+15302181545">530-218-1545</a></li>
             <li><a href="mailto:Jaskarn@crowncm.org">Jaskarn@crowncm.org</a></li>
-            <li>Bay Area & Northern California</li>
+            <li>Bay Area &amp; Northern California</li>
           </ul>
         </div>
       </div>
