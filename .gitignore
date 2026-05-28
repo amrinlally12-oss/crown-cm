@@ -1,0 +1,5 @@
+# OS files
+.DS_Store
+
+# Internal dev notes — not for public hosting
+CLAUDE.md

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Crown Construction Management</title>
+  <meta name="description" content="Schedule a free consultation with Crown Construction Management. Expert construction management and owner's representation for the Bay Area and Northern California.">
+  <link rel="canonical" href="https://crowncm.org/contact.html">
+  <meta property="og:title" content="Contact | Crown Construction Management">
+  <meta property="og:description" content="Schedule a free consultation. Expert construction management and owner's representation for the Bay Area and Northern California.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://crowncm.org/contact.html">
+  <meta property="og:image" content="https://crowncm.org/images/logo-full-color.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://crowncm.org/images/logo-full-color.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="images/logo-icon.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ════════ NAVIGATION ════════ -->
+  <nav class="nav nav--transparent">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo-transparent.png" alt="Crown Construction Management">
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="contact.html" class="nav__cta">Free Consultation</a>
+      </div>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════ HERO ════════ -->
+  <section class="hero hero--sub">
+    <div class="hero__bg"><div class="hero__accent"></div></div>
+    <div class="container">
+      <div class="hero__content">
+        <p class="hero__tagline">Get Started</p>
+        <h1>Let's <span>Talk</span></h1>
+        <div class="gold-line"></div>
+        <p>Every project starts with a conversation. Tell us about yours and we'll show you how Crown can help.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ CONTACT SECTION ════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <div class="reveal">
+            <p class="label">Free Consultation</p>
+            <h2>Ready to Build Smarter?</h2>
+            <div class="gold-line"></div>
+            <p>Whether you're planning a new development, managing a renovation, or navigating a complex entitlement, we're here to help. Fill out the form or reach out directly — there's no obligation and no pressure.</p>
+          </div>
+
+          <div style="margin-top:40px;">
+            <div class="contact-info__item reveal reveal-delay-1">
+              <h4>Phone</h4>
+              <p><a href="tel:+15302181545">530-218-1545</a></p>
+            </div>
+            <div class="contact-info__item reveal reveal-delay-2">
+              <h4>Email</h4>
+              <p><a href="mailto:Jaskarn@crowncm.org">Jaskarn@crowncm.org</a></p>
+            </div>
+            <div class="contact-info__item reveal reveal-delay-3">
+              <h4>Service Area</h4>
+              <p class="desc">Bay Area, Greater Sacramento, and Northern California. We serve residential and commercial projects across the region.</p>
+            </div>
+            <div class="contact-info__item reveal reveal-delay-4">
+              <h4>Response Time</h4>
+              <p class="desc">We typically respond within one business day. For urgent project matters, call us directly.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="reveal">
+          <!--
+            ═══ FORMSPREE SETUP ═══
+            Replace YOUR_FORM_ID in the action below with the ID from your
+            Formspree form (formspree.io). Example: https://formspree.io/f/xpzvnqkl
+          -->
+          <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="New consultation request — Crown CM website">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Full Name *</label>
+                <input type="text" id="name" name="name" class="form__input" required placeholder="Your name">
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form__input" placeholder="(555) 123-4567">
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form__input" required placeholder="you@email.com">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="project-type">Project Type</label>
+              <select id="project-type" name="project_type" class="form__select">
+                <option value="">Select a project type...</option>
+                <option value="new-construction">New Construction</option>
+                <option value="renovation">Renovation / Remodel</option>
+                <option value="parcel-split">Parcel Split / Entitlement</option>
+                <option value="adu">ADU (Accessory Dwelling Unit)</option>
+                <option value="commercial">Commercial Project</option>
+                <option value="owners-rep">Owner's Representation</option>
+                <option value="advisory">Hourly Advisory / Consulting</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="location">Project Location</label>
+              <input type="text" id="location" name="project_location" class="form__input" placeholder="City or area (e.g., Sacramento, San Jose)">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">Tell Us About Your Project *</label>
+              <textarea id="message" name="message" class="form__textarea" required placeholder="Brief description of your project, timeline, and what you're looking for..."></textarea>
+            </div>
+
+            <!-- Honeypot for spam -->
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button type="submit" class="btn btn--gold btn--large form__submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="images/logo-transparent.png" alt="Crown Construction Management">
+          <p>Expert construction management and owner's representation for the Bay Area and Northern California.</p>
+          <p class="footer__tagline">BUILDING TODAY &bull; CREATING TOMORROW</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+15302181545">530-218-1545</a></li>
+            <li><a href="mailto:Jaskarn@crowncm.org">Jaskarn@crowncm.org</a></li>
+            <li>Bay Area & Northern California</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Crown Construction Management. All rights reserved.</p>
+        <p>Bay Area &bull; Sacramento &bull; Northern California</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
